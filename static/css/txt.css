@@ -1,0 +1,132 @@
+body {
+	width: 600px;
+	font-family: monospace;
+	counter-reset: h2;
+}
+body * {
+	font-size: 14px;
+	line-height: 1.2rem;
+}
+.article-list {
+	margin: 0 40px;
+	padding: 0;
+}
+.article-list li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.article-list .divider {
+	flex-grow: 1;
+	border-bottom: 1px dashed black;
+	margin: 5px;
+}
+h2 {
+	counter-reset: h3;
+}
+h3 {
+	counter-reset: h4;
+}
+h4 {
+	counter-reset: h5;
+}
+h5 {
+	counter-reset: h6;
+}
+h2:before {
+	counter-increment: h2;
+	content: counter(h2) ". ";
+}
+h3:before {
+	counter-increment: h3;
+	content: counter(h2) "." counter(h3) ". ";
+}
+h4:before {
+	counter-increment: h4;
+	content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+}
+h5:before {
+	counter-increment: h5;
+	content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+}
+h6:before {
+	counter-increment: h6;
+	content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
+}
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {content: ""; counter-increment: none;} 
+header {
+	margin: 20px 0;
+	text-align: center;
+}
+header * {
+	font-size: 1.2rem;
+}
+.front-block {
+	margin-bottom: 40px;
+	border: solid 0 #999;
+	border-width: 0 0 1px;
+	padding: 20px 0 10px;
+}
+.front-block .title, .front-block .meta {
+	display: flex;
+	align-items: center;
+}
+.front-block .title .divider, .front-block .meta .divider {
+	flex-grow: 1;
+}
+.title h1 {
+	margin: 0;
+}
+.tag:after {
+	content: ', ';
+}
+.tag:last-child:after {
+	content: '';
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+.content p, .content pre, .content blockquote, .content div {
+	margin-left: 15px;
+}
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+blockquote {
+	border: solid #aaa;
+	border-width: 0 0 0 4px;
+	padding-left: 1rem;
+	font-style: italic;
+}
+.toc-block {
+	text-align: center;
+	margin: 50px 0;
+}
+.toc-block h2 {
+	font-size: 0.9rem;
+	margin: 0;
+}
+.toc {
+	margin: 0 40px 0 20px;
+}
+.toc ol {
+	counter-reset: item;
+	padding-left: 20px;
+	text-align: left;
+}
+.toc li {
+	clear: both;
+	list-style: none;
+}
+.toc li:before {
+	counter-increment: item;
+	content: counters(item, ".") ". ";
+	padding-right: 7px;
+}
+footer {
+	margin-top: 1.5rem;
+	text-align: center;
+}
+

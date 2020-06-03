@@ -1,0 +1,12 @@
+name = "plain"
+license = "MIT"
+licenselink = "https://github.com/yanlinlin82/simple-style/blob/master/LICENSE"
+description = "Very plain style, reminiscent of text files"
+homepage = "https://github.com/AngeloR/plain-hugo-theme"
+tags = [ "simple", "plain", "blog", "white", "minimal" ]
+features = [ "simple", "white", "plain" ]
+min_version = "0.61.0"
+
+[author]
+name = "Angelo R."
+homepage = "https://xangelo.ca"
