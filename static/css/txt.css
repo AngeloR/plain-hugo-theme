@@ -196,8 +196,8 @@ footer {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #181e25;
-		color: #949ea8;
+		background-color: var(--darkmode-background-color);
+		color: var(--darkmode-text-color);
 	}
 
 	.article-list .divider {
