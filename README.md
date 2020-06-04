@@ -1,11 +1,24 @@
 # Plain Hugo Theme
 
-Modeled after the RFC text files, this is a very bare-bones theme that I use on my site https://xangelo.ca
+Modeled after the RFC text files, this is a very bare-bones theme that I use on my site https://xangelo.ca.
+
+It has a very simple mobile layout and auto-swaps between light/dark mode based on user browser preferences.
 
 # Screenshots
-![Home Page](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/index-screenshot.png)
+## Light, Home Page
+![Home Page](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/light-home-page.png)
 
-![Post](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/post-screenshot.png)
+## Light, Single
+![Single](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/light-single.png)
+
+## Dark, Home Page
+![Home Page](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/dark-home-page.png)
+
+## Dark, Single
+![Single](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/dark-single.png)
+
+## Mobile, Single, Light
+![Single](https://github.com/AngeloR/plain-hugo-theme/blob/master/images/mobile-light-single.png)
 
 ## Supported Parameters
 
