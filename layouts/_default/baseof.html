@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
 {{ partial "html-meta.html" . -}}
 <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
-<link rel="stylesheet" type="text/css" href="{{ "/css/txt.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "/css/txt.css" | relURL }}" />
 {{ with .Site.Params.favicon -}}
-<link rel="icon" href="{{ . }}" type="image/x-icon">
+<link rel="icon" href="{{ . }}" type="image/x-icon" />
 {{ end -}}
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
