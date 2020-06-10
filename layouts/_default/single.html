@@ -1,5 +1,5 @@
 {{ define "main" -}}
-<div class="front-block">
+<section class="front-block">
 	<div class="title">
 		<h1 class="nocount">{{ .Title }}</h1>
 		{{ with .Params.Subtitle -}}
@@ -27,8 +27,22 @@
 		<h2 class="nocount">Table of Contents</h2>
 		<aside class="toc">{{ .TableOfContents }}</aside>
 	</div>
-</div>
-<div class="content">
+</section>
+<section class="content">
 	{{ .Content -}}
-</div>
+</section>
+{{ if .Site.Params.utterances -}}
+<section class="comments">
+	<h2 class="nocount">Comments</h2>
+	<script src="https://utteranc.es/client.js"
+			repo={{ .Site.Params.utterances.repo }}
+			issue-term={{ .Site.Params.utterances.issue_term }}
+			label={{ .Site.Params.utterances.label }}
+			theme={{ .Site.Params.utterances.theme }}
+			crossorigin="anonymous"
+			async>
+	</script>
+</section>
+{{end -}}
 {{ end -}}
+
