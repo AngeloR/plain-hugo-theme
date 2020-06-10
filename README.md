@@ -2,7 +2,7 @@
 
 Modeled after the RFC text files, this is a very bare-bones theme that I use on my site https://xangelo.ca.
 
-It has a very simple mobile layout and auto-swaps between light/dark mode based on user browser preferences.
+It has a very simple mobile layout and auto-swaps between light/dark mode based on user browser preferences. It also supports [utteranc.es](https://utteranc.es/) for comments. That's configurable by supplying valid configuration defined below.
 
 # Screenshots
 ## Light, Home Page
@@ -34,4 +34,12 @@ author = "..."
 description = "..."
 keywords = "..."
 googleSiteVerification = "<google-site-verification-code>"
+
+[params.utterances]
+repo = "AngeloR/angelor.github.io"
+issue_term="pathname"
+label="comment"
+theme="preferred-color-scheme"
+
+
 ```
