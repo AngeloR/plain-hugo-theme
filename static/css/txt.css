@@ -1,9 +1,9 @@
 html {
 	--default-text-color: black;
 	--darkmode-background-color: #181e25;
-	--darkmode-text-color: #949ea8;
-	--primary-color: #1a6fda;
-	--secondary-color: #5f4d82;
+	--darkmode-text-color: #b1becc;
+	--primary-color: #3a86e6;
+	--secondary-color: #7e63b3;
 }
 
 body {
@@ -139,6 +139,9 @@ h6 {
 	font-weight: bold;
 }
 
+.content {
+	margin-bottom: 3rem;
+}
 .content p,
 .content pre,
 .content blockquote,
