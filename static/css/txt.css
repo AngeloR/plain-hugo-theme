@@ -139,9 +139,6 @@ h6 {
 	font-weight: bold;
 }
 
-.content {
-	margin-bottom: 3rem;
-}
 .content p,
 .content pre,
 .content blockquote,
@@ -190,6 +187,10 @@ blockquote {
 	counter-increment: item;
 	content: counters(item, ".") ". ";
 	padding-right: 0.5rem;
+}
+
+.comments {
+	margin-top: 3rem;
 }
 
 footer {
