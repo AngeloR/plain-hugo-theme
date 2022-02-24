@@ -1,20 +1,18 @@
 html {
-	--default-text-color: black;
+	--default-text-color: #313131;
 	--darkmode-background-color: #181e25;
 	--darkmode-text-color: #b1becc;
 	--primary-color: #3a86e6;
-	--secondary-color: #7e63b3;
+	--secondary-color: #8751f2;
 }
 
 body {
 	font-family: monospace;
 	counter-reset: h2;
 	margin: auto;
-}
-
-body * {
-	font-size: 14px;
-	line-height: 1.2rem;
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: var(--default-text-color);
 }
 
 a {
@@ -27,6 +25,22 @@ a:visited {
 
 main {
 	margin-top: 10px;
+}
+
+p {
+  margin-top: 1.7rem;
+}
+
+.content ul, .content ol {
+  margin-bottom: 1.7rem;
+}
+
+.content h2 ~ p {
+  margin-top: 1.2rem;
+}
+
+.content p ~ ul, .content p ~ ol {
+  margin-top: 1.2rem;
 }
 
 .article-list {
@@ -144,6 +158,7 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
+  margin-top: 4rem;
 }
 
 .content p,
@@ -151,6 +166,10 @@ h6 {
 .content blockquote,
 .content div {
 	margin-left: 1rem;
+}
+
+.content > h2:first-child {
+  margin-top: 0;
 }
 
 img {
@@ -228,7 +247,7 @@ footer {
 @media(min-width: 801px) {
 	body {
 		width: 60%;
-		max-width: 600px;
+		max-width: 720px;
 	}
 }
 
