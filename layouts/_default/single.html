@@ -1,16 +1,6 @@
 {{ define "main" -}}
 <section class="front-block">
 	<div class="title">
-		<h1 class="nocount">{{ .Title }}</h1>
-		{{ with .Params.Subtitle -}}
-		<span class="tagline">{{ . }}</span>
-		{{ end -}}
-		<span class="divider"></span>
-		{{ if .Date -}}
-		<div>Pub: {{ .Date.Format "2006-01-02" }}</div>
-		{{ end -}}
-	</div>
-	<div class="meta">
 		{{ if .Params.tags -}}
 		<div class="tags">
 			Tags: {{ range .Params.tags -}}
@@ -23,8 +13,17 @@
 			Author: Angelo R.
 		</div>
 	</div>
+	<div class="meta">
+		{{ if .Date -}}
+		<div>Pub: {{ .Date.Format "2006-01-02" }}</div>
+		{{ end -}}
+		<span class="divider"></span>
+		<div>
+			{{ .WordCount }} words
+		</div>
+	</div>
 	<div class="toc-block">
-		<h2 class="nocount">Table of Contents</h2>
+		<h1 class="nocount">{{ .Title }}</h1>
 		<aside class="toc">{{ .TableOfContents }}</aside>
 	</div>
 </section>
